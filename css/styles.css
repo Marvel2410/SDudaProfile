@@ -17,6 +17,8 @@ body {
   border-radius: 10px;
   width: 80%;
   height: 50%;
+  margin: auto;
+  margin-top: 130px; /* Adjust the margin as needed */
   background: linear-gradient(rgba(46, 41, 95, 0.59), rgba(29, 28, 28, 0.59)),
               url('../img/3px-tile.png');
   background-size: cover;
@@ -33,6 +35,8 @@ body {
   border-radius: 10px;
   box-sizing: border-box; /* Include padding and border in the width */
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  margin-bottom: 70px; /* Add margin to the bottom */
+
  
 }
 
@@ -46,6 +50,7 @@ body {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   overflow: hidden;
   background-clip: padding-box;
+
 }
 
 .profile-details {
