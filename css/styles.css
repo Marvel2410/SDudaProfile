@@ -13,9 +13,10 @@ body {
 
 .rectangle {
   text-align: center;
-  padding: -5px;
+  padding: -15px;
   border-radius: 10px;
   width: 80%;
+  height: 50%;
   background: linear-gradient(rgba(46, 41, 95, 0.59), rgba(29, 28, 28, 0.59)),
               url('../img/3px-tile.png');
   background-size: cover;
@@ -26,12 +27,13 @@ body {
 
 .smallrectangle {
   width: 80%; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
+  height: 150px; /* Adjust the height as needed */
   background-color: #2b0232;
   margin-top: 20px; /* Adjust the margin as needed */
   border-radius: 10px;
   box-sizing: border-box; /* Include padding and border in the width */
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+ 
 }
 
 .profile-picture {
@@ -42,15 +44,19 @@ body {
   border: 5px solid #fff;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-
   overflow: hidden;
   background-clip: padding-box;
 }
 
+.profile-details {
+  position: relative;
+  z-index: 1;
+}
+
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   color: white;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
 }
 
 .role {
