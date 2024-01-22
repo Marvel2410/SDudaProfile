@@ -37,7 +37,18 @@ body {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-bottom: 70px; /* Add margin to the bottom */
 
- 
+  display: flex;
+  justify-content: space-evenly; /* Space out the links and icons evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.smallrectangle a {
+  text-decoration: none;
+  color: white;
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #2b0232;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
 }
 
 .profile-picture {
