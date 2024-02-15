@@ -1,6 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Arial', sans-serif;
   background-color: rgba(30, 25, 75, 0.8); /* Dark Blue background color */
   color: white;
@@ -9,11 +7,13 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin: 0; /* Remove default body margin */
+  box-sizing: border-box; /* Include padding and border in the width */
 }
 
 .rectangle {
   text-align: center;
-  padding: -15px;
+  padding: 10px;
   border-radius: 10px;
   width: 80%;
   height: 50%;
@@ -42,15 +42,35 @@ body {
   align-items: center; /* Center items vertically */
 }
 
-.smallrectangle a {
+.smallrectangle a i {
+  font-size: 2em;
   text-decoration: none;
   color: white;
   padding: 10px; /* Adjust padding as needed */
   border-radius: 5px; /* Add rounded corners */
-  background-color: #2b0232;
-  transition: background-color 0.3s ease; /* Smooth transition effect */
+  background-color: #4b045b;
+  transition: font-size 0.3s;
 }
 
+  .smallrectangle a:hover i {
+    font-size: 2.5em; 
+  }
+
+  .smallrectangle a {
+    font-size: 1.5em; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .social-icon {
+    width: 70px; /* Set the desired width */
+    height: 70px; /* Set the desired height */
+    margin-right: 10px; /* Add some spacing between the icons */
+  }
+  
 .profile-picture {
   width: 240px;
   height: 270px;
@@ -70,7 +90,7 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: white;
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
 }
@@ -82,4 +102,50 @@ h1 {
   border-radius: 30px;
   display: inline-block;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  /* CSS rules for smaller screens */
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  width: 100%; /* Make the navbar span the entire width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add padding to the top and bottom, and include it in the total width */
+  position: relative; /* Add position relative */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px); /* Position the dropdown below the menu button */
+  left: 0;
+  width: 160px; /* Set a fixed width for the dropdown */
+  background-color: #333;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dropdown a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.menu-button.active + .menu-dropdown {
+  display: block; /* Show the dropdown when the menu button is active */
 }

@@ -6,24 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Styled Name</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+
+
 </head>
 
 <body class="background">
+  <nav class="navbar">
+    <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <div class="menu-dropdown">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <!-- Add more links as needed -->
+    </div>
+  </nav>
+
   <div class="rectangle">
-    <img src="img/profile.png" class="profile-picture" alt="profilepic">
+    <img src="img/profile.png" class="profile-picture" alt="Profile Picture">
     <div class="profile-details">
       <h1>Stephanie Ann Duda</h1>
       <p class="role">Web Developer</p>
     </div>
   </div>
   <div class="smallrectangle">
-    <a href="about.html">About Me</a>
-    <a href="contact.html">Contact Me</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="https://www.facebook.com/" target="_blank" class="social-icon">Facebook</a>
-    <a href="https://twitter.com/" target="_blank" class="social-icon">Twitter</a>
+    <a href="about.html"><i class="fa-solid fa-eye"></i><span>About Me</span></a>
+    <a href="contact.html"><i class="fa-solid fa-pencil"></i><span>Contact Me</span></a>
+    <a href="projects.html"><i class="fa-solid fa-cubes"></i><span>Projects</span></a>
+    <a href="resume.html"><i class="fa-solid fa-object-group"></i><span>Resume</span></a>
+    <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="Facebook" class="social-icon"></a>
+    <a href="https://www.linkedin.com/"><img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon"></a>
   </div>
+
+  <script>
+    function toggleMenu() {
+      var menuButton = document.querySelector('.menu-button');
+      menuButton.classList.toggle('active');
+    }
+
+  </script>
 </body>
 
 </html>
