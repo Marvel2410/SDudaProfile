@@ -1,0 +1,26 @@
+.contact-info {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-info h2 {
+  font-size: 2em; /* Increased font size */
+  font-weight: bold; /* Added bold font weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Added text shadow */
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.2em; /* Increased font size */
+  margin-bottom: 15px;
+}
+
+.rectangle h2 {
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
+}
