@@ -1,6 +1,50 @@
+.rectangle {
+  background: linear-gradient(rgba(46, 41, 95, 0.59), rgba(29, 28, 28, 0.59)),
+              url('../img/3px-tile.png');
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin: 10px; /* Add margin for spacing */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center horizontally */
+  max-width: 80%; /* Limit the maximum width */
+  height: auto;
+}
+
 
 .rectangle h2 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  text-align: center; /* Center the header text */
+  margin-bottom: 20px; /* Add some spacing below the header */
+}
+
+.frontend-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project {
+  background-color: #2b0232;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  border: 3px solid black;
+  word-wrap: break-word;
+  max-width: 250px;
+  max-height: 120px;
+  text-align: center;
+}
+
+.frontend-info .project {
+  flex: 1 1 200px; /* Grow, shrink, basis */
+  margin: 5px;
 }

@@ -28,14 +28,13 @@ body {
 
 .smallrectangle {
   width: 80%; /* Adjust the width as needed */
-  height: 150px; /* Adjust the height as needed */
+  height: 15%; /* Adjust the height as needed */
   background-color: #2b0232;
-  margin-top: 20px; /* Adjust the margin as needed */
+  margin-top: 10px; /* Adjust the margin as needed */
   border-radius: 10px;
   box-sizing: border-box; /* Include padding and border in the width */
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-bottom: 70px; /* Add margin to the bottom */
-
   display: flex;
   justify-content: space-evenly; /* Space out the links and icons evenly */
   align-items: center; /* Center items vertically */
@@ -56,7 +55,7 @@ body {
   }
 
   .smallrectangle a {
-    font-size: 1.5em; 
+    font-size: 1.0em; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,6 +67,7 @@ body {
     width: 70px; /* Set the desired width */
     height: 70px; /* Set the desired height */
     margin-right: 10px; /* Add some spacing between the icons */
+ 
   }
   
 .profile-picture {
