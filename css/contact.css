@@ -1,16 +1,13 @@
 .contact-info {
   text-align: center;
   margin-top: 10px;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
 }
 
 .contact-info h2 {
-  font-size: 2em; /* Increased font size */
-  font-weight: bold; /* Added bold font weight */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Added text shadow */
+  font-size: 2em; 
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
   margin-bottom: 10px;
 }
 
@@ -23,4 +20,42 @@
   font-size: 3em;
   font-weight: bold;
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
+}
+
+.smallrectangle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.smallrectangle a {
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+
+.social-icon {
+  width: 50px; /* Adjusted icon size */
+  height: 50px; /* Adjusted icon size */
+}
+
+@media (max-width: 768px) {
+  /* CSS rules for smaller screens */
+  .smallrectangle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icon {
+    width: 70px; /* Adjusted icon size */
+    height: 70px; /* Adjusted icon size */
+  }
+
+  .smallrectangle a {
+    margin: 5px 0; /* Adjusted margin for links */
+  }
 }
