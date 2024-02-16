@@ -8,23 +8,55 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+  /* Adjust the minmax value to set the minimum and maximum width of each column */
   grid-gap: 20px;
   padding: 20px;
   justify-content: center;
 }
 
+
 .project {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 5px;
+  background-color: #2b0232;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 15px;
   text-align: center;
+  border: 3px solid black;
+}
+
+.image {
+  max-width: 100%; /* Make sure the image does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent any extra space below the image */
+  margin: 0 auto 20px; /* Center the image horizontally and add some space at the bottom */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+}
+
+.image2 {
+  max-width: 70%; /* Make sure the image does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent any extra space below the image */
+  margin: 0 auto 20px; /* Center the image horizontally and add some space at the bottom */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+}
+.image3 {
+  max-width: 70%; /* Make sure the image does not exceed the container width */
+  height: 30%; /* Maintain aspect ratio */
+  display: block; /* Prevent any extra space below the image */
+  margin: 0 auto 20px; /* Center the image horizontally and add some space at the bottom */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
 }
 
 .project h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
 }
+
 
 .project p {
   font-size: 1rem;
@@ -39,13 +71,13 @@ body {
 
 .smallrectangle {
   width: 80%;
-  height: 150px;
+  height: 110px;
   background-color: #2b0232;
   margin-top: 20px;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
