@@ -4,22 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Projects</title>
+  <title>Contact Information</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
-
-
 </head>
 
 <body>
+  <nav class="navbar">
+
+    <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
+    <button class="back-button" onclick="goBack()"><span><img src="img/blackarror.jpg" alt="Back" width="25"
+          height="25"></span></button>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <div class="menu-dropdown">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <!-- Add more links as needed -->
+    </div>
+  </nav>
+
   <div class="smallrectangle">
-    <a href="about.html"><i class="fa-solid fa-eye"></i><span>About Me</span></a>
-    <a href="contact.html"><i class="fa-solid fa-pencil"></i><span>Contact Me</span></a>
     <a href="index.html"><i class="fa-solid fa-font-awesome"></i><span>Home</span></a>
+    <a href="about.html"><i class="fa-solid fa-eye"></i><span>About Me</span></a>
     <a href="resume.html"><i class="fa-solid fa-object-group"></i><span>Resume</span></a>
     <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="Facebook" class="social-icon"></a>
     <a href="https://www.linkedin.com/"><img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon"></a>
   </div>
+
+  <script>
+    function toggleMenu() {
+      var menuButton = document.querySelector('.menu-button');
+      menuButton.classList.toggle('active');
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 
 </html>
