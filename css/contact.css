@@ -1,61 +1,25 @@
-.contact-info {
-  text-align: center;
-  margin-top: 10px;
-  
-}
-
-.contact-info h2 {
-  font-size: 2em; 
-  font-weight: bold; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-  margin-bottom: 10px;
-}
-
-.contact-info p {
-  font-size: 1.2em; /* Increased font size */
-  margin-bottom: 15px;
+.rectangle {
+  background: linear-gradient(rgba(46, 41, 95, 0.59), rgba(29, 28, 28, 0.59)),
+              url('../img/3px-tile.png');
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin: 10px; /* Add margin for spacing */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center horizontally */
+  max-width: 80%; /* Limit the maximum width */
+  height: auto;
 }
 
 .rectangle h2 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  text-align: center; /* Center the header text */
+  margin-bottom: 20px; /* Add some spacing below the header */
 }
 
-.smallrectangle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.smallrectangle a {
-  display: block;
-  text-align: center;
-  margin: 5px;
-}
-
-.social-icon {
-  width: 50px; /* Adjusted icon size */
-  height: 50px; /* Adjusted icon size */
-}
-
-@media (max-width: 768px) {
-  /* CSS rules for smaller screens */
-  .smallrectangle {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-icon {
-    width: 70px; /* Adjusted icon size */
-    height: 70px; /* Adjusted icon size */
-  }
-
-  .smallrectangle a {
-    margin: 5px 0; /* Adjusted margin for links */
-  }
-}
