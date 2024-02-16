@@ -69,6 +69,26 @@ body {
     margin-right: 10px; /* Add some spacing between the icons */
  
   }
+
+  @media only screen and (max-width: 600px) {
+    .smallrectangle {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0; /* Adjust padding as needed */
+      align-items: center;
+      justify-content: center;
+    }
+    .social-icon {
+      width: 50px; /* Adjust the width and height of the icons */
+      height: 50px;
+      margin-right: 0; /* Remove margin between icons */
+      margin-bottom: 10px; /* Add margin between icons and links */
+    }
+  
+    .smallrectangle a {
+      margin-right: 0; /* Remove margin between links */
+    }
+  }
   
 .profile-picture {
   width: 240px;
