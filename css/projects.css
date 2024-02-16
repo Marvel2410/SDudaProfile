@@ -1,0 +1,131 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(30, 25, 75, 0.8);
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.project {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.smallrectangle {
+  width: 80%;
+  height: 150px;
+  background-color: #2b0232;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto; /* Center the small rectangle horizontally */
+}
+
+
+.smallrectangle a i {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4b045b;
+  transition: font-size 0.3s;
+}
+
+.smallrectangle a:hover i {
+  font-size: 2.5em;
+}
+
+.smallrectangle a {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  width: 100%; /* Make the navbar span the entire width */
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the container */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add padding to the top and bottom, and include it in the total width */
+  position: relative; /* Add position relative */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.9em;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the menu button */
+  right: 0; /* Align the dropdown to the right edge */
+  background-color: #333;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dropdown a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.menu-button.active + .menu-dropdown {
+  display: block; /* Show the dropdown when the menu button is active */
+}
+
+.home-icon i {
+  color: white;
+}
